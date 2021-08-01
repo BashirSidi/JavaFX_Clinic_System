@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="563.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jsiit.controller.FXMLdrugController">
+   <children>
+      <VBox prefHeight="51.0" prefWidth="640.0" style="-fx-background-color: #3955A3; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;">
+         <children>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_MD" size="50" wrappingWidth="45.28571319580078" />
+                  <Region prefHeight="51.0" prefWidth="553.0" HBox.hgrow="SOMETIMES" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="JSIITC MANAGEMENT SYSTEM">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Region prefHeight="51.0" prefWidth="551.0" HBox.hgrow="SOMETIMES" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox>
+         <children>
+            <VBox style="-fx-background-color: #3955A3;">
+               <children>
+                  <JFXButton fx:id="btnPatient" alignment="TOP_LEFT" contentDisplay="CENTER" onAction="#handlePatientButton" prefHeight="25.0" prefWidth="232.0" styleClass="navButton" stylesheets="@../../Documents/NetBeansProjects/Clinic%20System/src/com/jsiit/css/style.css" text="PATIENT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></JFXButton>
+                  <JFXButton fx:id="btnStaff" alignment="TOP_LEFT" contentDisplay="CENTER" onAction="#handleStaffButton" prefHeight="25.0" prefWidth="232.0" styleClass="navButton" stylesheets="@../../Documents/NetBeansProjects/Clinic%20System/src/com/jsiit/css/style.css" text="STAFF" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDrug" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="10.0" layoutY="35.0" onAction="#handleDrugButton" prefHeight="25.0" prefWidth="232.0" styleClass="navCuButton" stylesheets="@../css/style.css" text="DRUG" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnConsultation" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="10.0" layoutY="60.0" onAction="#hadleConsultationButton" prefHeight="25.0" prefWidth="232.0" styleClass="navButton" stylesheets="@../../Documents/NetBeansProjects/Clinic%20System/src/com/jsiit/css/style.css" text="CONSULTATION" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAbout" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="10.0" layoutY="110.0" onAction="#handleAboutButton" prefHeight="25.0" prefWidth="232.0" styleClass="navButton" stylesheets="@../../Documents/NetBeansProjects/Clinic%20System/src/com/jsiit/css/style.css" text="ABOUT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Region prefHeight="498.0" prefWidth="232.0" />
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <JFXTabPane prefHeight="511.0" prefWidth="1135.0">
+               <tabs>
+                  <Tab fx:id="tabNewDrug" style="-fx-background-color: #3955A3;;" text="New drug                                                              ">
+                    <content>
+                        <VBox>
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <VBox />
+                                 </children>
+                              </VBox>
+                            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="930.0">
+                                 <children>
+                                    <GridPane layoutX="391.0" layoutY="121.0" prefHeight="301.0" prefWidth="407.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="166.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.0" minWidth="10.0" prefWidth="241.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Drug Name:" textFill="#3955a3" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Category:" textFill="#3955a3" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Drug Description:" textFill="#3955a3" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Arrival Date:" textFill="#3955a3" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Expiry Date:" textFill="#3955a3" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXTextField fx:id="txtDrugNameNew" promptText="Enter drug name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font></JFXTextField>
+                                          <JFXTextField fx:id="txtCategoryNew" promptText="Enter category" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXButton fx:id="btnAdd" onAction="#handleAddButton" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #3955A3;" text="ADD" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="20" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <Label text="Quantity:" textFill="#3955a3" GridPane.rowIndex="6">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXTextField fx:id="txtQuantityNew" promptText="Enter quantity" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextArea fx:id="txtDrugDescriptionNew" promptText="Enter drug description" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </JFXTextArea>
+                                          <JFXDatePicker fx:id="jfxDatePickerArrivalDateNew" defaultColor="#3955a3" editable="false" prefHeight="25.0" prefWidth="136.0" promptText="Select arrival date" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <JFXDatePicker fx:id="jfxDatePickerExpiryDateNew" defaultColor="#3955a3" editable="false" prefHeight="25.0" prefWidth="136.0" promptText="Select expiry date" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabUpdateDrug" style="-fx-background-color: #3955A3;" text="Update drug                                                           ">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXComboBox fx:id="comboDrugID" layoutX="31.0" layoutY="14.0" onAction="#handleDrugIDCombo" promptText="Drug ID:" />
+                              <GridPane layoutX="418.0" layoutY="122.0" prefHeight="301.0" prefWidth="407.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="166.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.0" minWidth="10.0" prefWidth="241.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Drug Name:" textFill="#3955a3" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Category:" textFill="#3955a3" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Drug Description:" textFill="#3955a3" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Arrival Date:" textFill="#3955a3" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Expiry Date:" textFill="#3955a3" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtDrugNameUpdate" promptText="Enter drug name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="txtCategoryUpdate" promptText="Enter category" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label text="Quantity:" textFill="#3955a3" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtQuantityUpdate" promptText="Enter quantity" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextArea fx:id="txtDrugDescriptionUpdate" promptText="Enter drug description" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </JFXTextArea>
+                                    <JFXDatePicker fx:id="jfxDatePickerArrivalDateUpdate" defaultColor="#3955a3" editable="false" prefHeight="25.0" prefWidth="136.0" promptText="Select arrival date" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <JFXDatePicker fx:id="jfxDatePickerExpiryDateUpdate" defaultColor="#3955a3" editable="false" prefHeight="25.0" prefWidth="136.0" promptText="Select expiry date" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <JFXButton fx:id="btnUpdate" onAction="#handleUpdateButton" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #3955A3;" text="UPDATE" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </GridPane>
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabViewAllDrug" style="-fx-background-color: #3955A3;" text="View all drug                                                       ">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableViewAllDrug" layoutY="30.0" prefHeight="600.0" prefWidth="1133.0">
+                                <columns>
+                                  <TableColumn fx:id="columnDrugId" prefWidth="114.0" text="Drug ID" />
+                                  <TableColumn fx:id="columnDrugName" minWidth="1.0" prefWidth="110.0" text="Drug Name" />
+                                    <TableColumn fx:id="columnCategoryName" prefWidth="97.0" text="Category Name" />
+                                    <TableColumn fx:id="columnDrugDescription" prefWidth="147.0" text="Drug Description" />
+                                    <TableColumn fx:id="columnArrivalDate" prefWidth="168.0" text="Arrival Date" />
+                                    <TableColumn fx:id="columnExpiryDate" prefWidth="128.0" text="Expiry Date" />
+                                    <TableColumn fx:id="columnQuantity" prefWidth="129.0" text="Quantity" />
+                                </columns>
+                              </TableView>
+                              <JFXTextField fx:id="txtSearch" layoutX="31.0" layoutY="4.0" onAction="#handleSearchTextField" prefHeight="25.0" prefWidth="192.0" promptText="Search" />
+                              <FontAwesomeIconView fill="#3955a3" glyphName="SEARCH" layoutX="14.0" layoutY="22.0" size="15" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

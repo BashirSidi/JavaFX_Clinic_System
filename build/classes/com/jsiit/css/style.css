@@ -1,0 +1,12 @@
+.navButton{}
+.navButton:hover{
+    -fx-text-fill:  #3955A3;
+    -fx-background-color: white;
+}
+
+.navCuButton{
+    -fx-text-fill: #3955A3;
+    -fx-background-color: white;
+}
+
+
